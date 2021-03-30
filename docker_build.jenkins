@@ -25,7 +25,7 @@ pipeline {
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
-                dir ('site1') {
+                dir ('Static') {
                 	sh 'docker build -t trofimovsemen/static-site1:latest . '
                 }
             }
